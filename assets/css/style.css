@@ -1,0 +1,258 @@
+html, body, .section_1{
+    height: 100% !important; 
+    /* overflow-x: hidden; */
+} 
+
+.fa-xmark{
+  color: white !important;
+}
+.section_1{
+    background-image: url('/assets/img/bg-1.jpg');
+    padding-bottom: 80px !important;
+    object-fit: cover;
+    background-position: 50% 115%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.h5_sec1, .h5_sec3{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 70px !important;
+}
+
+@media screen and (max-width: 760px) {
+    .h1_sec1{
+        font-size: 30px !important;
+    }
+}
+h1{
+    margin-top: 20px !important;
+    font-size: 60px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700 !important;
+}
+.span_sec1, .span_sec1 a{
+    margin-top: 20px !important;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.span_sec1 a:hover{
+    color: rgb(239, 239, 239) !important;
+}
+
+.h5_sec2{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px !important;
+    font-weight: 400 !important;
+}
+
+
+.h2_sec2, .h2_sec4, .h2_sec5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: #A5BBA9;
+    border-radius: 50%;
+}
+
+.p_sec2, .p_sec3, .p_sec6{
+    font-size: 16px !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.icons{
+    color: white;
+}
+
+.section_3{
+    background-color: #A5BBA9 !important;
+}
+
+.h2_sec3{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.section_4{
+    background-color: #f1c50e;
+}
+
+.btn_contactus{
+    transition: 0.5s !important;
+}
+.btn_contactus:hover{
+    background-color: #A5BBA9 !important;
+    transition: 0.5s !important;
+
+}
+.h5_sec6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card_sec6{
+    background-color: #F3F8F4 !important;
+}
+
+.h6_sec6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.btn_sec6{
+    background-color: #A5BBA9 !important;
+    transition: 0.5s !important;
+}
+.btn_sec6:hover{
+    transition: 0.5s !important;
+    background-color: #99aa9c !important;
+}
+.h5_sec8{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.section_8{
+    background-color: #F3F8F4 !important;
+}
+
+.p_sec10{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px !important;
+}
+
+.fa-phone{
+    color: white;
+}
+
+.a_sec11{
+    transition: 0.5s;
+    font-size: 30px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700 !important;
+    text-decoration: none;
+}
+.a_sec11:hover{
+    transition: 0.5s;
+    color: white !important;
+}
+
+.span_sec11{
+    color: white;
+    font-size: 30px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+/* !Counter animation  */    
+/* Bread */
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .bread{
+    animation: counter 5s  alternate ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num var(--num);
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 2rem;
+ 
+  }
+  .bread::after {
+    content: counter(num);
+ 
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 300;
+    }
+  }
+
+
+
+  /* Croissant */
+  @property --num1 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .croissant{
+    animation: counter1 5s  alternate ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num1 var(--num1);
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 2rem;
+ 
+  }
+  .croissant::after {
+    content: counter(num1);
+ 
+  }
+  
+  @keyframes counter1 {
+    from {
+      --num1: 0;
+    }
+    to {
+      --num1: 500;
+    }
+  }
+
+
+
+  /* cupcake */
+
+  @property --num2 {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .cupcake{
+    animation: counter2 5s  alternate ease-in-out;
+    animation-fill-mode: forwards;
+    counter-reset: num2 var(--num2);
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 2rem;
+ 
+  }
+  .cupcake::after {
+    content: counter(num2);
+ 
+  }
+  
+  @keyframes counter2 {
+    from {
+      --num2: 0;
+    }
+    to {
+      --num2: 250;
+    }
+  }
