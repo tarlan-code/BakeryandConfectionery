@@ -166,7 +166,7 @@ h1{
     inherits: false;
   }
   
-  .bread{
+  .bread.active{
     animation: counter 5s  alternate ease-in-out;
     animation-fill-mode: forwards;
     counter-reset: num var(--num);
@@ -199,7 +199,7 @@ h1{
     inherits: false;
   }
   
-  .croissant{
+  .croissant.active{
     animation: counter1 5s  alternate ease-in-out;
     animation-fill-mode: forwards;
     counter-reset: num1 var(--num1);
@@ -233,7 +233,7 @@ h1{
     inherits: false;
   }
   
-  .cupcake{
+  .cupcake.active{
     animation: counter2 5s  alternate ease-in-out;
     animation-fill-mode: forwards;
     counter-reset: num2 var(--num2);
